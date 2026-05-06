@@ -9,10 +9,10 @@ export function ContactSection() {
     e.preventDefault()
     const form = e.currentTarget
     const formData = new FormData(form)
-    const params: Record<string, string> = {}
-    formData.forEach((value, key) => {
-      params[key] = value.toString()
-    })
+    const params = {} as Record<string, string>
+formData.forEach((value, key) => {
+  params[key] = String(value)
+})
     try {
       await fetch("/", {
         method: "POST",
