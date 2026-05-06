@@ -1,4 +1,3 @@
-import Link from "next/link"
 import { Phone, Mail, Globe } from "lucide-react"
 
 export function Footer() {
