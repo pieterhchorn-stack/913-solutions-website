@@ -147,7 +147,7 @@ export function ContactSection() {
                   className="w-full bg-input border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
                 >
                   <option value="">Select a Service</option>
-                  <option value="repairs">Repairs & Maintenance</option>
+                  <option value="repairs">Repairs &amp; Maintenance</option>
                   <option value="installation">New Installation</option>
                   <option value="line-repairs">Line Repairs</option>
                   <option value="upgrades">Upgrades</option>
