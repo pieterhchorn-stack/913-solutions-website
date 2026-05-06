@@ -170,7 +170,7 @@ export function ContactSection() {
                 />
               </div>
 
-              {submitted && (
+              {submitted &amp;&amp; (
                 <div className="bg-green-500/20 border border-green-500 rounded-lg px-4 py-3 text-green-400 text-sm">
                   Thank you! We will call you back shortly at the number you provided.
                 </div>
