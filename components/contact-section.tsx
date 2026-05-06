@@ -10,9 +10,9 @@ export function ContactSection() {
     const form = e.currentTarget
     const formData = new FormData(form)
     const params = {} as Record<string, string>
-formData.forEach((value, key) => {
-  params[key] = String(value)
-})
+    formData.forEach((value, key) => {
+      params[key] = String(value)
+    })
     try {
       await fetch("/", {
         method: "POST",
@@ -39,9 +39,10 @@ formData.forEach((value, key) => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
-          {/* Contact Info */}
           <div className="space-y-6">
-            <h3 className="text-xl font-bold text-foreground mb-6">Contact Information</h3>
+            <h3 className="text-xl font-bold text-foreground mb-6">
+              Contact Information
+            </h3>
 
             
               href="tel:913-990-8220"
@@ -65,7 +66,9 @@ formData.forEach((value, key) => {
               </div>
               <div>
                 <p className="text-sm text-muted-foreground">Email</p>
-                <p className="text-foreground font-semibold">info@913SolutionsLLC.com</p>
+                <p className="text-foreground font-semibold">
+                  info@913SolutionsLLC.com
+                </p>
               </div>
             </a>
 
@@ -80,7 +83,9 @@ formData.forEach((value, key) => {
               </div>
               <div>
                 <p className="text-sm text-muted-foreground">Website</p>
-                <p className="text-foreground font-semibold">913SolutionsLLC.com</p>
+                <p className="text-foreground font-semibold">
+                  913SolutionsLLC.com
+                </p>
               </div>
             </a>
 
@@ -90,27 +95,31 @@ formData.forEach((value, key) => {
               </div>
               <div>
                 <p className="text-sm text-muted-foreground">Service Area</p>
-                <p className="text-foreground font-semibold">Kansas City Metro Area</p>
+                <p className="text-foreground font-semibold">
+                  Kansas City Area
+                </p>
               </div>
             </div>
           </div>
 
-          {/* Quick Contact Form */}
           <div className="bg-card border border-border rounded-lg p-6">
-            <h3 className="text-xl font-bold text-foreground mb-6">Request a Quote</h3>
+            <h3 className="text-xl font-bold text-foreground mb-6">
+              Request a Quote
+            </h3>
             <form
               name="contact"
               method="POST"
               data-netlify="true"
-              netlify-honeypot="bot-field"
               onSubmit={handleSubmit}
               className="space-y-4"
             >
               <input type="hidden" name="form-name" value="contact" />
-              <input type="hidden" name="bot-field" />
 
               <div>
-                <label htmlFor="name" className="text-sm text-muted-foreground mb-1 block">
+                <label
+                  htmlFor="name"
+                  className="text-sm text-muted-foreground mb-1 block"
+                >
                   Name
                 </label>
                 <input
@@ -124,7 +133,10 @@ formData.forEach((value, key) => {
               </div>
 
               <div>
-                <label htmlFor="phone" className="text-sm text-muted-foreground mb-1 block">
+                <label
+                  htmlFor="phone"
+                  className="text-sm text-muted-foreground mb-1 block"
+                >
                   Phone
                 </label>
                 <input
@@ -138,7 +150,10 @@ formData.forEach((value, key) => {
               </div>
 
               <div>
-                <label htmlFor="service" className="text-sm text-muted-foreground mb-1 block">
+                <label
+                  htmlFor="service"
+                  className="text-sm text-muted-foreground mb-1 block"
+                >
                   Service Needed
                 </label>
                 <select
@@ -147,7 +162,7 @@ formData.forEach((value, key) => {
                   className="w-full bg-input border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
                 >
                   <option value="">Select a Service</option>
-                  <option value="repairs">Repairs &amp; Maintenance</option>
+                  <option value="repairs">Repairs and Maintenance</option>
                   <option value="installation">New Installation</option>
                   <option value="line-repairs">Line Repairs</option>
                   <option value="upgrades">Upgrades</option>
@@ -158,7 +173,10 @@ formData.forEach((value, key) => {
               </div>
 
               <div>
-                <label htmlFor="message" className="text-sm text-muted-foreground mb-1 block">
+                <label
+                  htmlFor="message"
+                  className="text-sm text-muted-foreground mb-1 block"
+                >
                   Message
                 </label>
                 <textarea
@@ -170,9 +188,9 @@ formData.forEach((value, key) => {
                 />
               </div>
 
-              {submitted &amp;&amp; (
+              {submitted && (
                 <div className="bg-green-500/20 border border-green-500 rounded-lg px-4 py-3 text-green-400 text-sm">
-                  Thank you! We will call you back shortly at the number you provided.
+                  Thank you! We will call you back shortly.
                 </div>
               )}
 
