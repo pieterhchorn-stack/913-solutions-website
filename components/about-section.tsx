@@ -43,7 +43,7 @@ export function AboutSection() {
             We started 913 Solutions because we saw a gap in the market: homeowners and property managers struggling to find a reliable, fairly priced trades company that actually shows up and wants to work, does the job right, and stands behind their work. That&apos;s exactly what we set out to fix.
           </p>
           <p>
-            The &quot;913&quot; in our name isn&apos;t just an area code — it&apos;s a statement. We&apos;re proud to serve Johnson &amp; Miami County and the greater Kansas City metro, and we&apos;re committed to being the company this community can count on for the long haul.
+            The &quot;913&quot; in our name isn&apos;t just an area code — it&apos;s a statement. We&apos;re proud to serve Johnson &amp; Miami County and the greater Kansas City area, and we&apos;re committed to being the company this community can count on for the long haul.
           </p>
           <p>
             Whether it&apos;s a leaking pipe or a list of repairs you&apos;ve been putting off for months, 913 Solutions is ready to offer the solution. Give us a call — we&apos;d love to earn your business.
