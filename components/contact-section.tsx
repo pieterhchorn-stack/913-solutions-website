@@ -74,47 +74,28 @@ export function ContactSection() {
           {/* Quick Contact Form */}
           <div className="bg-card border border-border rounded-lg p-6">
             <h3 className="text-xl font-bold text-foreground mb-6">Request a Quote</h3>
-            <form className="space-y-4">
-              <div>
-                <label htmlFor="name" className="text-sm text-muted-foreground mb-1 block">
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  className="w-full bg-input border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-                  placeholder="Your name"
-                />
-              </div>
-              <div>
-                <label htmlFor="phone" className="text-sm text-muted-foreground mb-1 block">
-                  Phone
-                </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  className="w-full bg-input border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-                  placeholder="Your phone number"
-                />
-              </div>
-              <div>
-                <label htmlFor="message" className="text-sm text-muted-foreground mb-1 block">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  rows={4}
-                  className="w-full bg-input border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary resize-none"
-                  placeholder="Describe your plumbing needs..."
-                />
-              </div>
-              <Button
-                type="submit"
-                className="w-full bg-primary hover:bg-primary/80 text-primary-foreground font-bold py-3"
-              >
-                Send Request
-              </Button>
-            </form>
+<form
+  name="contact"
+  method="POST"
+  data-netlify="true"
+  netlify-honeypot="bot-field"
+>
+  <input type="hidden" name="form-name" value="contact" />
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="tel" name="phone" placeholder="Your Phone Number" required />
+  <input type="email" name="email" placeholder="Your Email" required />
+  <select name="service">
+    <option value="">Select a Service</option>
+    <option value="repairs">Repairs & Maintenance</option>
+    <option value="installation">New Installation</option>
+    <option value="line-repairs">Line Repairs</option>
+    <option value="upgrades">Upgrades</option>
+    <option value="emergency">Emergency Service</option>
+    <option value="other">Other</option>
+  </select>
+  <textarea name="message" placeholder="Describe your job" rows="4"></textarea>
+  <button type="submit">Get a Quote</button>
+</form>
           </div>
         </div>
       </div>
