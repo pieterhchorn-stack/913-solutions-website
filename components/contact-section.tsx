@@ -38,13 +38,8 @@ export function ContactSection() {
         </div>
         <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
           <div className="space-y-6">
-            <h3 className="text-xl font-bold text-foreground mb-6">
-              Contact Information
-            </h3>
-            <a
-              href="tel:913-990-8220"
-              className="flex items-center gap-4 p-4 bg-card border border-border rounded-lg hover:border-primary/50 transition-colors"
-            >
+            <h3 className="text-xl font-bold text-foreground mb-6">Contact Information</h3>
+            <a href="tel:913-990-8220" className="flex items-center gap-4 p-4 bg-card border border-border rounded-lg hover:border-primary/50 transition-colors">
               <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
                 <Phone className="w-6 h-6 text-primary" />
               </div>
@@ -53,11 +48,7 @@ export function ContactSection() {
                 <p className="text-foreground font-semibold">(913) 990-8220</p>
               </div>
             </a>
-            <a
-              href="mailto:info@913SolutionsLLC.com"
-              className="flex items-center gap-4 p-4 bg-card border border-border rounded-lg hover:border-primary/50 transition-colors"
-            >
-              <a
+            <a href="mailto:info@913SolutionsLLC.com" className="flex items-center gap-4 p-4 bg-card border border-border rounded-lg hover:border-primary/50 transition-colors">
               <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
                 <Mail className="w-6 h-6 text-primary" />
               </div>
@@ -66,12 +57,7 @@ export function ContactSection() {
                 <p className="text-foreground font-semibold">info@913SolutionsLLC.com</p>
               </div>
             </a>
-            <a href=""></a></div>
-              href="https://913SolutionsLLC.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-4 p-4 bg-card border border-border rounded-lg hover:border-primary/50 transition-colors"
-            
+            <a href="https://913SolutionsLLC.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 p-4 bg-card border border-border rounded-lg hover:border-primary/50 transition-colors">
               <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
                 <Globe className="w-6 h-6 text-primary" />
               </div>
@@ -91,52 +77,20 @@ export function ContactSection() {
             </div>
           </div>
           <div className="bg-card border border-border rounded-lg p-6">
-            <h3 className="text-xl font-bold text-foreground mb-6">
-              Request a Quote
-            </h3>
-            <form
-              name="contact"
-              method="POST"
-              data-netlify="true"
-              onSubmit={handleSubmit}
-              className="space-y-4"
-            >
+            <h3 className="text-xl font-bold text-foreground mb-6">Request a Quote</h3>
+            <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit} className="space-y-4">
               <input type="hidden" name="form-name" value="contact" />
               <div>
-                <label htmlFor="name" className="text-sm text-muted-foreground mb-1 block">
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  required
-                  className="w-full bg-input border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-                  placeholder="Your name"
-                />
+                <label htmlFor="name" className="text-sm text-muted-foreground mb-1 block">Name</label>
+                <input type="text" id="name" name="name" required className="w-full bg-input border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Your name" />
               </div>
               <div>
-                <label htmlFor="phone" className="text-sm text-muted-foreground mb-1 block">
-                  Phone
-                </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  required
-                  className="w-full bg-input border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-                  placeholder="Your phone number"
-                />
+                <label htmlFor="phone" className="text-sm text-muted-foreground mb-1 block">Phone</label>
+                <input type="tel" id="phone" name="phone" required className="w-full bg-input border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Your phone number" />
               </div>
               <div>
-                <label htmlFor="service" className="text-sm text-muted-foreground mb-1 block">
-                  Service Needed
-                </label>
-                <select
-                  id="service"
-                  name="service"
-                  className="w-full bg-input border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-                >
+                <label htmlFor="service" className="text-sm text-muted-foreground mb-1 block">Service Needed</label>
+                <select id="service" name="service" className="w-full bg-input border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary">
                   <option value="">Select a Service</option>
                   <option value="repairs">Repairs and Maintenance</option>
                   <option value="installation">New Installation</option>
@@ -148,26 +102,15 @@ export function ContactSection() {
                 </select>
               </div>
               <div>
-                <label htmlFor="message" className="text-sm text-muted-foreground mb-1 block">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={4}
-                  className="w-full bg-input border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary resize-none"
-                  placeholder="Describe your plumbing needs..."
-                />
+                <label htmlFor="message" className="text-sm text-muted-foreground mb-1 block">Message</label>
+                <textarea id="message" name="message" rows={4} className="w-full bg-input border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary resize-none" placeholder="Describe your plumbing needs..." />
               </div>
               {submitted && (
                 <div className="bg-green-500/20 border border-green-500 rounded-lg px-4 py-3 text-green-400 text-sm">
                   Thank you! We will call you back shortly.
                 </div>
               )}
-              <Button
-                type="submit"
-                className="w-full bg-primary hover:bg-primary/80 text-primary-foreground font-bold py-3"
-              >
+              <Button type="submit" className="w-full bg-primary hover:bg-primary/80 text-primary-foreground font-bold py-3">
                 Send Request
               </Button>
             </form>
