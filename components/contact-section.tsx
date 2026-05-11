@@ -71,32 +71,50 @@ export function ContactSection() {
             </div>
           </div>
 
-<div className="bg-card border border-border rounded-lg p-6 space-y-6">
-  <h3 className="text-xl font-bold text-foreground">Get In Touch</h3>
-  
-  <a href="tel:913-990-8220" className="flex items-center gap-4 p-4 bg-primary rounded-lg hover:bg-primary/80 transition-colors">
-    <Phone className="w-6 h-6 text-white" />
-    <div>
-      <p className="text-white font-bold text-lg">(913) 990-8220</p>
-      <p className="text-white/80 text-sm">Call or text us anytime</p>
-    </div>
-  </a>
-
-  <a href="mailto:info@913SolutionsLLC.com" className="flex items-center gap-4 p-4 bg-card border border-border rounded-lg hover:border-primary/50 transition-colors">
-    <Mail className="w-6 h-6 text-primary" />
-    <div>
-      <p className="text-foreground font-bold">info@913SolutionsLLC.com</p>
-      <p className="text-muted-foreground text-sm">We reply within the hour</p>
-    </div>
-  </a>
-
-  <div className="bg-primary/10 border border-primary/20 rounded-lg p-4 text-center">
-    <p className="text-foreground font-bold mb-1">Available 7 Days a Week</p>
-    <p className="text-muted-foreground text-sm">Monday to Friday 7am to 6pm</p>
-    <p className="text-muted-foreground text-sm">Saturday 8am to 4pm</p>
-    <p className="text-muted-foreground text-sm">Emergency calls anytime</p>
-  </div>
-</div>
+          {/* Quick Contact Form */}
+          <div className="bg-card border border-border rounded-lg p-6">
+            <h3 className="text-xl font-bold text-foreground mb-6">Request a Quote</h3>
+            <form className="space-y-4">
+              <div>
+                <label htmlFor="name" className="text-sm text-muted-foreground mb-1 block">
+                  Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  className="w-full bg-input border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+                  placeholder="Your name"
+                />
+              </div>
+              <div>
+                <label htmlFor="phone" className="text-sm text-muted-foreground mb-1 block">
+                  Phone
+                </label>
+                <input
+                  type="tel"
+                  id="phone"
+                  className="w-full bg-input border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+                  placeholder="Your phone number"
+                />
+              </div>
+              <div>
+                <label htmlFor="message" className="text-sm text-muted-foreground mb-1 block">
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  rows={4}
+                  className="w-full bg-input border border-border rounded-lg px-4 py-3 text-foreground focus:outline-none focus:ring-2 focus:ring-primary resize-none"
+                  placeholder="Describe your plumbing needs..."
+                />
+              </div>
+              <Button
+                type="submit"
+                className="w-full bg-primary hover:bg-primary/80 text-primary-foreground font-bold py-3"
+              >
+                Send Request
+              </Button>
+            </form>
           </div>
         </div>
       </div>
